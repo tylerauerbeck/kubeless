@@ -135,6 +135,8 @@ We provide several [PubSub runtimes](https://hub.docker.com/r/kubeless/), which 
 
 If you want to deploy the manifest we provide to deploy Kafka and Zookeper execute the following command:
 
+> NOTE: Versions until 0.4 contains kafka and zookeeper as part of the main deployment manifest so you don't need to execute the command below.
+
 ```console
 $ kubectl create -f https://github.com/kubeless/kubeless/releases/download/$RELEASE/kafka-zookeeper-$RELEASE.yaml
 ```
